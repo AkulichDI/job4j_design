@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Objects;
 
 public class ReadFile {
 
@@ -50,6 +51,28 @@ public class ReadFile {
 
     }
 
+    private static boolean createFile ( String path, String fileName, String data ){
+
+        Objects.requireNonNull(path, "Путь не может быть null");
+        Objects.requireNonNull(fileName, "Наименование файла не может быть null");
+
+        try ( FileOutputStream out = new FileOutputStream(path+fileName) ){
+
+            if ( data != null ) {
+                String[] lines = data.split(System.lineSeparator());
+                for (String line : lines){
+                        out.write(line.getBytes());
+                        out.write(System.lineSeparator().getBytes());
+                }
+
+            }
+
+        }catch (IOException e ){
+            e.printStackTrace();
+        }
+        return new File(path + fileName).exists();
+    }
+
 
     public static void main(String[] args) {
 
@@ -59,9 +82,11 @@ public class ReadFile {
             if ( !new File(patch + fileName).exists()) init();
             else System.out.println("\nФайл: " + patch + fileName + " уже существует\n");
 
-
+        StringBuilder sb = new StringBuilder();
+        sb.append(1).append(System.lineSeparator()).append(6).append(System.lineSeparator()).append(14).append(System.lineSeparator()).append(17).append(System.lineSeparator());
         printData(readFile(patch, fileName));
 
+        createFile(patch, "event.txt", sb.toString());
 
     }
 
