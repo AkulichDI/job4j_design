@@ -1,5 +1,6 @@
 package ru.job4j.io;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -24,7 +25,7 @@ public class ResultFile {
 
     public static void main(String[] args) {
 
-        try (FileOutputStream output = new FileOutputStream("data/data.txt")){
+      /*  try (FileOutputStream output = new FileOutputStream("data/data.txt")){
 
             output.write("Hello world!".getBytes());
             output.write(System.lineSeparator().getBytes());
@@ -32,7 +33,24 @@ public class ResultFile {
         }catch (IOException e){
             e.printStackTrace();
         }
+       */
 
+        try (FileOutputStream output = new FileOutputStream("data/dataHomeWork1.txt")) {
+            output.write(table(9).getBytes());
+            output.write(System.lineSeparator().getBytes());
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+        try (FileInputStream input = new FileInputStream("data/dataHomeWork1.txt")){
+
+            StringBuilder sb = new StringBuilder();
+            sb.append(input.readAllBytes().toString());
+
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
 
     }
 
