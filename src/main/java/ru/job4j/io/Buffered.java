@@ -6,8 +6,8 @@ public class Buffered {
 
     public static void main(String[] args) {
 
-        try (BufferedInputStream input = new BufferedInputStream(new FileInputStream("data/input.txt"));
-             BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream("data/output.txt"))){
+        try (BufferedInputStream input = new BufferedInputStream(new FileInputStream("data/newData.txt"));
+             BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream("data/output.txt", true))){
 
             output.write(input.readAllBytes());
 
