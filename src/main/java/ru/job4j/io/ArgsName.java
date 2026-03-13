@@ -1,16 +1,34 @@
 package ru.job4j.io;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.File;
+import java.nio.file.Path;
+import java.util.*;
 
 public class ArgsName {
     private final Map<String, String> values = new HashMap<>();
+
+    private final List<String> commandsConf = List.of("-d", "-e", "-o");
+
 
     public String get(String key) {
         if (!values.containsKey(key)) {
             throw new IllegalArgumentException("This key: '" + key + "' is missing");
         }
         return values.get(key);
+    }
+
+
+    public void validateDirectory (Path path){
+
+        Objects.requireNonNull(path, "Вы не указали директорию");
+
+        File file = path.toFile();
+        if ( !file.exists() ){
+            throw new IllegalArgumentException("Нет такой директории");
+        }
+        if ( !file.canWrite()){
+            throw new IllegalArgumentException("Нельзя читать файл");
+        }
     }
 
     private void parse(String[] args) {
@@ -36,15 +54,30 @@ public class ArgsName {
         String keyPart = pair[0];
         String valuePart = pair[1];
 
-        if (keyPart.length() == 1) {
+
+
+        if (keyPart == null) {
             throw new IllegalArgumentException("Error: This argument '" + arg + "' does not contain a key");
+        }
+
+        if ( commandsConf.contains(keyPart)){
+
+
+            if ( !valuePart.startsWith(".")){
+                throw new IllegalArgumentException("Уважаемый ! Корявое расширение");
+            }
+            if ( keyPart.equals("-o") ){
+                if ( valuePart.equals(".zip") ){
+                    throw new IllegalArgumentException("Уважаемый !");
+                }
+            }
         }
 
         if (valuePart.isEmpty()) {
             throw new IllegalArgumentException("Error: This argument '" + arg + "' does not contain a value");
         }
-
     }
+
 
     public static ArgsName of(String[] args) {
         if (args.length == 0) {
