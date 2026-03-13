@@ -9,15 +9,41 @@ import java.util.function.Predicate;
 
 public class Search {
 
-    public static void main(String[] args) throws IOException {
 
-        Path start = Paths.get(".");
-        search(start, path -> path.toFile().getName().endsWith(".txt")).forEach(System.out::println);
+
+    private static void validateArgsConfiguration(String[] args){
+
+        if ( args.length != 2){
+            throw new IllegalArgumentException("Root folder is null. Usage  ROOT_FOLDER.");
+        }
+
+
     }
-    public static List<Path> search(Path root, Predicate<Path> condition) throws IOException {
+
+
+    public static List<Path> searchP(Path root, Predicate<Path> condition) throws IOException {
 
         SearchFiles searcher = new SearchFiles(condition);
         Files.walkFileTree(root, searcher);
         return searcher.getPaths();
     }
+
+
+    private static void search (String [] args ) throws IOException {
+
+        searchP(Path.of(args[0]), path -> path.toFile().getName().endsWith(args[1])).forEach(System.out::println);
+
+    }
+
+
+    public static void main(String[] args) throws IOException {
+
+        validateArgsConfiguration(args);
+
+        search(args);
+
+
+
+    }
+
 }
