@@ -38,7 +38,7 @@ public class EchoServer {
 
                     if ("Hello".equals(msg)) {
                         body = "Hello";
-                    } else if ("Bye".equals(msg)) {
+                    } else if ("Exit".equals(msg)) {
                         body = "Bye";
                         running = false;
                     }
@@ -52,6 +52,8 @@ public class EchoServer {
                                     body;
 
                     output.write(response.getBytes(StandardCharsets.UTF_8));
+
+                    output.write("Hello, dear friend.".getBytes(StandardCharsets.UTF_8));
                     output.flush();
                 }
             }
