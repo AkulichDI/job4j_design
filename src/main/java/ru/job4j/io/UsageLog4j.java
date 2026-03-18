@@ -22,7 +22,7 @@ public class UsageLog4j {
 
 
     public static void main(String[] args) {
-        LOG.trace("Trace Message1");
+       /* LOG.trace("Trace Message1");
         LOG.debug("DEBUG message1");
         LOG.info("INFO message1");
         LOG.warn("WARN message1");
@@ -32,6 +32,30 @@ public class UsageLog4j {
         var user = new UsageLog4j();
 
         user.save("Олег");
+*/
+
+
+        String name = "Petr Arsentev";
+        int age = 33;
+        LOG.debug("User info name : {}, age : {}", name, age);
+
+        byte a = '1';
+        int x = 2;
+        char c = '3';
+        long y = 4L;
+        float u = 5F;
+        double d = 6D;
+        short f = 7;
+        boolean tf = true;
+
+        LOG.info("byte {} тестирование после ", a);
+        LOG.info("int {}  2", x );
+        LOG.error("CHAR {}  3", c);
+        LOG.debug("{} LONG ", y);
+        LOG.warn("{}", u);
+        LOG.info("[{},{}]", a, d);
+        LOG.info("{}", f);
+        LOG.info("{}", tf);
 
 
     }
