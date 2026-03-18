@@ -32,7 +32,7 @@ public class UsageLog4j {
         var user = new UsageLog4j();
 
         user.save("Олег");
-*/
+
 
 
         String name = "Petr Arsentev";
@@ -57,7 +57,14 @@ public class UsageLog4j {
         LOG.info("{}", f);
         LOG.info("{}", tf);
 
+*/
 
+
+        try {
+            throw new Exception("Not supported code");
+        } catch (Exception e) {
+            LOG.error("Exception in log example", e);
+        }
     }
 
 

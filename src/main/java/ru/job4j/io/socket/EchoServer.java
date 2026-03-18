@@ -1,5 +1,8 @@
 package ru.job4j.io.socket;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,7 +13,10 @@ import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 
 public class EchoServer {
-    public static void main(String[] args) throws IOException {
+
+    private static final Logger LOG = LoggerFactory.getLogger(EchoServer.class);
+
+    public static void main(String[] args)  {
         boolean running = true;
 
         try (ServerSocket server = new ServerSocket(9000)) {
@@ -27,10 +33,10 @@ public class EchoServer {
                         continue;
                     }
 
-                    System.out.println(requestLine);
+                    LOG.info(requestLine);
 
                     for (String line = input.readLine(); line != null && !line.isEmpty(); line = input.readLine()) {
-                        System.out.println(line);
+                        LOG.info(line);
                     }
 
                     String body = "What";
@@ -53,10 +59,13 @@ public class EchoServer {
 
                     output.write(response.getBytes(StandardCharsets.UTF_8));
 
-                    output.write("Hello, dear friend.".getBytes(StandardCharsets.UTF_8));
                     output.flush();
+                }catch (IOException e ){
+                    LOG.error("Ошибка в блоке сокета: ", e);
                 }
             }
+        }catch ( IOException e ){
+            LOG.error("Ошибка в блоке сервера: ", e );
         }
     }
 
