@@ -1,8 +1,15 @@
 package ru.job4j.serialization.xml;
 
+import com.sun.xml.txw2.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement(name = "Contact")
 public class Contact {
 
-    private final String phone;
+    @XmlAttribute
+    private String phone;
 
     @Override
     public String toString() {
@@ -10,6 +17,8 @@ public class Contact {
                 "phone='" + phone + '\'' +
                 '}';
     }
+
+    public Contact(){};
 
     public Contact(String phone) {
         this.phone = phone;
