@@ -1,0 +1,14 @@
+create table cars (
+    id serial primary key,
+    model varchar(255),
+    power int,
+    price int
+);
+
+insert into cars (model, power, price) values ('Honda', 560, 10000);
+
+update cars set price = 200
+
+delete from cars where price = 200;
+ 
+select * from cars;
