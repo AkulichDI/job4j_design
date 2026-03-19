@@ -11,10 +11,22 @@
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
     <assistants>
-      <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="" availability="AVAILABLE" acknowledgement="NONE" selected="true">
+      <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="65ECA0982E4F4F8687B6071A5A17E04D" availability="AVAILABLE" acknowledgement="ENGAGED" selected="true">
+        <chats>
+          <chat id="65ECA0982E4F4F8687B6071A5A17E04D" title="" session-signature="" timestamp="1773960618749">
+            <messages />
+            <context provider="" profile="" model="" action="" interactive="true" />
+          </chat>
+        </chats>
         <tools />
       </assistant-state>
       <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+        <tools />
+      </assistant-state>
+      <assistant-state connection-id="virtual-postgres-connection" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="" availability="AVAILABLE" acknowledgement="NONE" selected="true">
+        <tools />
+      </assistant-state>
+      <assistant-state connection-id="virtual-postgres-connection" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
       <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="6691D7FD04124084AA89230F4DD2A2DF" availability="AVAILABLE" acknowledgement="ENGAGED" selected="true">
@@ -52,14 +64,18 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" object-ref="consoles/Connection 1" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabasePrerequisiteManager">
     <prerequisites />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" />
-    <connection id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" />
+    <connection id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28">
+      <session name="Session 1" id="5683fbd2-f40f-4186-91ff-9253ae6838ea" />
+    </connection>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
@@ -67,6 +83,7 @@
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/Car/Car" connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" session-id="MAIN" current-schema="public" />
     <mapping file-url="file://$PROJECT_DIR$/../Car" connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example1/init.sql" connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -254,7 +271,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="true" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="false" />
           <environment-type value="default" />

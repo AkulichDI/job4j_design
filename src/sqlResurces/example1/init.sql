@@ -1,0 +1,2 @@
+CREATE DATABASE exemple_3;
+
