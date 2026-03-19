@@ -12,6 +12,14 @@ public class Contact {
     public Contact() {
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     public Contact(String phone) {
         this.phone = phone;
     }

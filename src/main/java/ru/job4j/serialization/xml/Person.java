@@ -21,6 +21,8 @@ public class Person {
     @XmlElement(name = "status")
     private String[] statuses;
 
+
+
     public Person() {
     }
 
