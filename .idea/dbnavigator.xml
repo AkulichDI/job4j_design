@@ -84,6 +84,7 @@
     <mapping file-url="file://$PROJECT_DIR$/../Car" connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" session-id="MAIN" current-schema="public" />
     <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example3/hw.sql" connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" session-id="MAIN" current-schema="public" />
     <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example1/init.sql" connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example4/hw.sql" connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
