@@ -11,6 +11,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
     <assistants>
+      <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+        <tools />
+      </assistant-state>
       <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="65ECA0982E4F4F8687B6071A5A17E04D" availability="AVAILABLE" acknowledgement="ENGAGED" selected="true">
         <chats>
           <chat id="65ECA0982E4F4F8687B6071A5A17E04D" title="" session-signature="" timestamp="1773960618749">
@@ -20,13 +23,16 @@
         </chats>
         <tools />
       </assistant-state>
-      <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+      <assistant-state connection-id="virtual-postgres-connection" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
       <assistant-state connection-id="virtual-postgres-connection" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="" availability="AVAILABLE" acknowledgement="NONE" selected="true">
         <tools />
       </assistant-state>
-      <assistant-state connection-id="virtual-postgres-connection" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+      <assistant-state connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE" selected="true">
+        <tools />
+      </assistant-state>
+      <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
       <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="6691D7FD04124084AA89230F4DD2A2DF" availability="AVAILABLE" acknowledgement="ENGAGED" selected="true">
@@ -36,9 +42,6 @@
             <context provider="" profile="" model="" action="" interactive="true" />
           </chat>
         </chats>
-        <tools />
-      </assistant-state>
-      <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
     </assistants>
@@ -53,11 +56,8 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5">
-      <console name="Connection" type="STANDARD" schema="public" session="Main" />
-    </connection>
-    <connection id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28">
-      <console name="Connection 1" type="STANDARD" schema="public" session="Main" />
+    <connection id="b4315c7a-b930-401e-ba68-41a2f25679a5">
+      <console name="expo" type="STANDARD" schema="expo" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -70,22 +70,21 @@
     <prerequisites />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" />
-    <connection id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28">
-      <session name="Session 1" id="5683fbd2-f40f-4186-91ff-9253ae6838ea" />
-    </connection>
+    <connection id="b4315c7a-b930-401e-ba68-41a2f25679a5" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example6/hm.sql" connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" session-id="MAIN" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example1/create.sql" connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" session-id="MAIN" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/Car/Car" connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" session-id="MAIN" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/../Car" connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" session-id="MAIN" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example3/hw.sql" connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" session-id="MAIN" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example1/init.sql" connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" session-id="MAIN" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example4/hw.sql" connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example15/ls.sql" connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" session-id="MAIN" current-schema="public" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <execution-variables-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -98,10 +97,10 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection source-id="" id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" active="true" signed="true">
+      <connection source-id="" id="b4315c7a-b930-401e-ba68-41a2f25679a5" active="true" signed="true">
         <database>
-          <name value="Connection" />
-          <description value="" />
+          <name value="expo" />
+          <description value="Учебная бдшка" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
           <database-version value="18.3" />
@@ -111,7 +110,7 @@
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
-          <database value="postgres" />
+          <database value="expo" />
           <tns-folder value="" />
           <tns-profile value="" />
           <server-type value="" />
@@ -153,127 +152,6 @@
           <ddl-file-binding value="true" />
           <database-logging value="true" />
           <connect-automatically value="true" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="false" />
-          <environment-type value="default" />
-          <connectivity-timeout value="30" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <credential-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <debugger>
-          <compile-dependencies value="true" />
-          <tcp-host-address value="" />
-          <tcp-port-from value="4000" />
-          <tcp-port-to value="4999" />
-          <jdwp-tunnel-type value="NONE" />
-          <debugger-type value="ASK" />
-          <reverse-ssh-tunnel>
-            <host value="" />
-            <port value="22" />
-            <bind-host value="127.0.0.1" />
-            <bind-port value="0" />
-            <auth-type value="PASSWORD" />
-            <user value="" />
-            <key-file value="" />
-          </reverse-ssh-tunnel>
-        </debugger>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
-          <object-filters />
-          <object-type-filter use-master-settings="true">
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="JSON_VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="JAVA_CLASS" enabled="true" />
-            <object-type name="JAVA_FIELD" enabled="true" />
-            <object-type name="JAVA_METHOD" enabled="true" />
-            <object-type name="JAVA_RESOURCE" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-            <object-type name="CREDENTIAL" enabled="true" />
-            <object-type name="AI_PROFILE" enabled="true" />
-            <object-type name="AI_MODEL" enabled="true" />
-          </object-type-filter>
-        </object-filters>
-      </connection>
-      <connection source-id="" id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" active="true" signed="true">
-        <database>
-          <name value="Connection 1" />
-          <description value="" />
-          <database-type value="POSTGRES" />
-          <config-type value="BASIC" />
-          <database-version value="18.3" />
-          <driver-source value="BUNDLED" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="DATABASE" />
-          <host value="localhost" />
-          <port value="5432" />
-          <database value="idea_db" />
-          <tns-folder value="" />
-          <tns-profile value="" />
-          <server-type value="" />
-          <protocol value="" />
-          <url-parameters />
-          <type value="USER_PASSWORD" />
-          <user value="postgres" />
-          <token-type value="" />
-          <token-config-file value="" />
-          <token-profile value="" />
-          <adb-compartment-ocid value="" />
-          <adb-database-ocid value="" />
-          <azure-token-database-id-uri value="" />
-          <azure-token-tenant-id value="" />
-          <azure-token-client-id value="" />
-          <azure-token-client-certificate-file value="" />
-          <session-user value="postgres" />
-        </database>
-        <properties>
-          <auto-commit value="false" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-        </ssh-settings>
-        <ssl-settings>
-          <active value="false" />
-          <certificate-authority-file value="" />
-          <client-certificate-file value="" />
-          <client-key-file value="" />
-        </ssl-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="true" />
-          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="false" />
           <environment-type value="default" />
