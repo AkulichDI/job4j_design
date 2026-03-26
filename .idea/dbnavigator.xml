@@ -78,6 +78,7 @@
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example15/ls.sql" connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" session-id="MAIN" current-schema="public" />
     <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example15/hw.sql" connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example16/ls.sql" connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
