@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DBNavigator.Project.CodeGeneratorManager">
+    <generator-states>
+      <state category="JAVA">
+        <module-selection value="job4j_design" />
+        <content-root-selection value="$PROJECT_DIR$/src/main/java" />
+      </state>
+    </generator-states>
+  </component>
   <component name="DBNavigator.Project.DDLFileAttachmentManager">
     <mappings />
     <preferences />
@@ -11,9 +19,6 @@
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
     <assistants>
-      <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
-        <tools />
-      </assistant-state>
       <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="65ECA0982E4F4F8687B6071A5A17E04D" availability="AVAILABLE" acknowledgement="ENGAGED" selected="true">
         <chats>
           <chat id="65ECA0982E4F4F8687B6071A5A17E04D" title="" session-signature="" timestamp="1773960618749">
@@ -23,16 +28,16 @@
         </chats>
         <tools />
       </assistant-state>
-      <assistant-state connection-id="virtual-postgres-connection" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+      <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
       <assistant-state connection-id="virtual-postgres-connection" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="" availability="AVAILABLE" acknowledgement="NONE" selected="true">
         <tools />
       </assistant-state>
-      <assistant-state connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE" selected="true">
+      <assistant-state connection-id="virtual-postgres-connection" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
-      <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+      <assistant-state connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE" selected="true">
         <tools />
       </assistant-state>
       <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="6691D7FD04124084AA89230F4DD2A2DF" availability="AVAILABLE" acknowledgement="ENGAGED" selected="true">
@@ -42,6 +47,9 @@
             <context provider="" profile="" model="" action="" interactive="true" />
           </chat>
         </chats>
+        <tools />
+      </assistant-state>
+      <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
     </assistants>
@@ -70,7 +78,9 @@
     <prerequisites />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="b4315c7a-b930-401e-ba68-41a2f25679a5" />
+    <connection id="b4315c7a-b930-401e-ba68-41a2f25679a5">
+      <session name="Session 1" id="9062e160-9ba4-4526-a9bd-237f046ff56f" />
+    </connection>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
@@ -78,6 +88,7 @@
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example15/ls.sql" connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" session-id="MAIN" current-schema="public" />
     <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example15/hw.sql" connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example17/less.sql" connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" session-id="MAIN" current-schema="public" />
     <mapping file-url="file://$PROJECT_DIR$/src/sqlResurces/example16/ls.sql" connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
