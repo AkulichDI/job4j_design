@@ -19,9 +19,6 @@
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
     <assistants>
-      <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
-        <tools />
-      </assistant-state>
       <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="65ECA0982E4F4F8687B6071A5A17E04D" availability="AVAILABLE" acknowledgement="ENGAGED" selected="true">
         <chats>
           <chat id="65ECA0982E4F4F8687B6071A5A17E04D" title="" session-signature="" timestamp="1773960618749">
@@ -31,16 +28,16 @@
         </chats>
         <tools />
       </assistant-state>
-      <assistant-state connection-id="virtual-postgres-connection" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+      <assistant-state connection-id="2fcbecaf-aada-45e9-88bc-f3d0b1148db5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
       <assistant-state connection-id="virtual-postgres-connection" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="" availability="AVAILABLE" acknowledgement="NONE" selected="true">
         <tools />
       </assistant-state>
-      <assistant-state connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE" selected="true">
+      <assistant-state connection-id="virtual-postgres-connection" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
-      <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
+      <assistant-state connection-id="b4315c7a-b930-401e-ba68-41a2f25679a5" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE" selected="true">
         <tools />
       </assistant-state>
       <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="PUBLIC" default-profile-name="" selected-chat-id="6691D7FD04124084AA89230F4DD2A2DF" availability="AVAILABLE" acknowledgement="ENGAGED" selected="true">
@@ -50,6 +47,9 @@
             <context provider="" profile="" model="" action="" interactive="true" />
           </chat>
         </chats>
+        <tools />
+      </assistant-state>
+      <assistant-state connection-id="a103d4ad-e0a1-4cda-b26d-55fadfddbb28" assistant-type="SELECT_AI" default-profile-name="" selected-chat-id="" availability="UNAVAILABLE" acknowledgement="NONE">
         <tools />
       </assistant-state>
     </assistants>
